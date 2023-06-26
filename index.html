@@ -25,15 +25,15 @@ body {
 }
 canvas {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 80;
+  left: 240;
   height: 100%;
   width: 100%;
   z-index: 9;
 }
 </style>
   
-  <canvas height="600" width="600"></canvas>
+  <canvas height="200" width="200"></canvas>
   
  <script>
 
@@ -45,7 +45,7 @@ var canvas = document.getElementsByTagName('canvas')[0],
     
 if (canvas.getContext('2d')) {
   ctx = canvas.getContext('2d');
-  ctx.clearRect(240, 80, 525, 475);
+  ctx.clearRect(0, 0, 200, 200);
   ctx.save();
   // Create radial gradient
   grad = ctx.createRadialGradient(0,0,0,0,0,200); 
