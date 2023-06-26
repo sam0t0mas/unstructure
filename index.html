@@ -2,85 +2,115 @@
 
 <html>
 <head>
-  
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "gz00zhgh5h");
-</script>
-  
-<title>u&hairsp;ʍ&hairsp;o&hairsp;p&hairsp;ǝ&hairsp;p&hairsp;ı&hairsp;s&hairsp;d&hairsp;n</title>
-<!-- <meta name="viewport" content="width=device-width,initial-scale=1"> -->
-<meta name="title" content="u&hairsp;ʍ&hairsp;o&hairsp;p&hairsp;ǝ&hairsp;p&hairsp;ı&hairsp;s&hairsp;d&hairsp;n">
-<meta property="og:image" content="./u.jfif">
-<meta property="og:title" content="u&hairsp;ʍ&hairsp;o&hairsp;p&hairsp;ǝ&hairsp;p&hairsp;ı&hairsp;s&hairsp;d&hairsp;n">
 
-</head>
 
-  <style>
-body {
-  background: #000;
-}
-canvas {
-  position: absolute;
-  top: 80;
-  left: 240;
-  height: 100%;
-  width: 100%;
-  z-index: 9;
-}
-</style>
-  
-  <canvas height="200" width="200"></canvas>
-  
- <script>
-
-var canvas = document.getElementsByTagName('canvas')[0],
-    ctx = null,
-    grad = null,
-    body = document.getElementsByTagName('body')[0],
-    color = 255;
-    
-if (canvas.getContext('2d')) {
-  ctx = canvas.getContext('2d');
-  ctx.clearRect(0, 0, 200, 200);
-  ctx.save();
-  // Create radial gradient
-  grad = ctx.createRadialGradient(0,0,0,0,0,200); 
-  grad.addColorStop(0, '#000');
-  grad.addColorStop(1, 'rgb(' + color + ', ' + color + ', ' + color + ')');
-
-  // assign gradients to fill
-  ctx.fillStyle = grad;
-
-  // draw 200x200 fill
-  ctx.fillRect(0,0,200,200);
-  ctx.save();
-  
-  body.onmousemove = function (event) {
-    var width = window.innerWidth, 
-        height = window.innerHeight, 
-        x = event.clientX, 
-        y = event.clientY,
-        rx = 200 * x / width,
-        ry = 200 * y / height;
-        
-    var xc = ~~(256 * x / width);
-    var yc = ~~(256 * y / height);
-
-    grad = ctx.createRadialGradient(rx, ry, 0, rx, ry, 600); 
-    grad.addColorStop(0, '#000');
-    grad.addColorStop(1, ['rgb(', xc, ', ', (255 - xc), ', ', yc, ')'].join(''));
-    // ctx.restore();
-    ctx.fillStyle = grad;
-    ctx.fillRect(0,0,200,200);
-    // ctx.save();
-  };
-}
-  </script>
-
+      <meta charset="utf-8">
+    <script src="app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css">
+  <button class='start'>Start/Restart</button>
+    <div class='score'>Score:<span>0</span></div>
+    <div class='grid'>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   
   <center>
  
